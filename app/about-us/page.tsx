@@ -57,7 +57,7 @@ export default function AboutPage() {
 
             {/* Hero content */}
             <div className="flex flex-col lg:flex-row gap-10 items-start">
-              <div className="flex-1">
+              <div className="w-full lg:flex-1">
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Про нас</h1>
                 <p className="text-sm text-gray-500 leading-relaxed">
                   ACTU — це український бренд, який спеціалізується на виробництві високоякісних клеїв, мурувальних розчинів, штукатурок, сумішей для влаштування стяжок та підлог, а також для систем теплоізоляції. Наша компанія пишається інноваційним підходом та використанням перевіреної сировини для досягнення ідеальних результатів.
@@ -65,7 +65,7 @@ export default function AboutPage() {
                   Довіра наших клієнтів є найважливішою. Наші продукти використовують фахівці з усієї України. ACTU — це не просто бренд. Це надійний партнер для тих, хто шукає високоякісні рішення для будівництва та ремонту.
                 </p>
               </div>
-              <div className="flex-1 w-full">
+              <div className="w-full lg:flex-1">
                 <Image
                   src="https://cdn.prod.website-files.com/69ddf8ab1637e24e4f5b673f/69df88e5109844e8b8877737_95a9c66c8b0dba1ee3b19c1a40f270dc6d04c7b7.avif"
                   alt="Про ACTU"
@@ -82,7 +82,7 @@ export default function AboutPage() {
         <section className="py-16 bg-gray-50">
           <div className="max-w-[1200px] mx-auto px-5">
             <div className="flex flex-col lg:flex-row gap-12 items-start">
-              <div className="flex-1">
+              <div className="w-full lg:flex-1">
                 <Image
                   src="https://cdn.prod.website-files.com/69ddf8ab1637e24e4f5b673f/69df896bdc58211db1551e24_Group%202.avif"
                   alt="Історія компанії ACTU"
@@ -91,7 +91,7 @@ export default function AboutPage() {
                   className="w-full h-auto object-cover"
                 />
               </div>
-              <div className="flex-1">
+              <div className="w-full lg:flex-1">
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">Історія компанії</h2>
                 <p className="text-sm text-gray-500 leading-relaxed">
                   ACTU — це частина ONUR GROUP, великої групи компаній, яка активно працює в галузі Production. ONUR GROUP здобула визнання як надійний інвестор, сприяючи розвитку української економіки у сферах видобування та виробництва. Це важливий аспект нашого існування, адже ми впроваджуємо сучасні методи та технології, залучаючи для цього передовий європейський досвід.
@@ -111,22 +111,18 @@ export default function AboutPage() {
         <section className="py-16 bg-white">
           <div className="max-w-[1200px] mx-auto px-5">
             <h2 className="text-3xl font-bold text-gray-900 mb-10">Виробництво</h2>
-            <div className="flex flex-col gap-12">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {productionSteps.map((step) => (
-                <div key={step.title} className="flex flex-col md:flex-row gap-8 items-start">
-                  <div className="w-full md:w-[340px] flex-shrink-0">
-                    <Image
-                      src={step.image}
-                      alt={step.title}
-                      width={340}
-                      height={240}
-                      className="w-full h-auto object-cover"
-                    />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-base font-semibold text-gray-900 mb-3">{step.title}</p>
-                    <p className="text-sm text-gray-500 leading-relaxed">{step.text}</p>
-                  </div>
+                <div key={step.title} className="flex flex-col">
+                  <Image
+                    src={step.image}
+                    alt={step.title}
+                    width={380}
+                    height={280}
+                    className="w-full h-[280px] object-cover mb-6"
+                  />
+                  <p className="text-base font-semibold text-gray-900 mb-3">{step.title}</p>
+                  <p className="text-sm text-gray-500 leading-relaxed">{step.text}</p>
                 </div>
               ))}
             </div>
@@ -137,7 +133,7 @@ export default function AboutPage() {
         <section className="py-16 bg-gray-50">
           <div className="max-w-[1200px] mx-auto px-5">
             <div className="flex flex-col lg:flex-row gap-12 items-start">
-              <div className="flex-1">
+              <div className="w-full lg:flex-1">
                 <Image
                   src="https://cdn.prod.website-files.com/69ddf8ab1637e24e4f5b673f/69df8c454e5b7fd1896615a2_e711883b9ba69ec3f1c2705d8a6108e856aaf08a.avif"
                   alt="Місія ACTU"
@@ -146,7 +142,7 @@ export default function AboutPage() {
                   className="w-full h-auto object-cover"
                 />
               </div>
-              <div className="flex-1">
+              <div className="w-full lg:flex-1">
                 <p className="text-base font-semibold text-gray-900 mb-6 leading-snug">
                   Місія ACTU — надавати якісні та актуальні рішення сухих будівельних сумішей для ринку України
                 </p>

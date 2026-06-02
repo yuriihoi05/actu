@@ -93,7 +93,7 @@ export default function Header() {
             <Link href="/dyleram" className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-[#ec6907] transition-colors">
               Дилерам
             </Link>
-            <Link href="/kontakty" className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-[#ec6907] transition-colors">
+            <Link href="/contact" className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-[#ec6907] transition-colors">
               Контакти
             </Link>
           </div>
@@ -164,7 +164,7 @@ export default function Header() {
             <Link href="/dyleram" className="block px-4 py-2.5 text-sm text-gray-700 hover:text-[#ec6907] hover:bg-gray-50 transition-colors" onClick={() => setMobileOpen(false)}>
               Дилерам
             </Link>
-            <Link href="/kontakty" className="block px-4 py-2.5 text-sm text-gray-700 hover:text-[#ec6907] hover:bg-gray-50 transition-colors" onClick={() => setMobileOpen(false)}>
+            <Link href="/contact" className="block px-4 py-2.5 text-sm text-gray-700 hover:text-[#ec6907] hover:bg-gray-50 transition-colors" onClick={() => setMobileOpen(false)}>
               Контакти
             </Link>
           </div>

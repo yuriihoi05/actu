@@ -120,8 +120,8 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Right: 4 columns always in one row */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 flex-1">
+          {/* Right: 4 columns */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 flex-1">
 
             {/* Каталог продукції */}
             <div>

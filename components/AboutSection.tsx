@@ -23,7 +23,7 @@ export default function AboutSection() {
             </div>
             <Link
               href="/about-us"
-              className="inline-block bg-[#ec6907] text-white font-semibold px-8 py-3 hover:bg-[#d45e06] transition-colors text-sm"
+              className="bg-[#ec6907] text-white font-bold w-full max-w-[20rem] h-[3.375rem] flex items-center justify-center border-2 border-transparent uppercase tracking-wide hover:bg-white hover:text-[#ec6907] hover:border-[#ec6907] transition-all duration-[400ms] text-lg"
             >
               Детальніше
             </Link>

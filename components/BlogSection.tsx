@@ -79,15 +79,15 @@ export default function BlogSection() {
                   </p>
                 </div>
                 {/* text-more — plain link text, matches original .text-more class */}
-                <span className="mt-4 text-sm text-gray-900 font-medium">Детальніше</span>
+                <span className="mt-8 text-[1.125rem] font-bold text-[#ec6907] uppercase leading-[1.375rem]">Детальніше</span>
               </div>
             </Link>
           ))}
         </div>
-        <div className="mt-10">
+        <div className="mt-10 flex justify-center">
           <Link
             href="/blog"
-            className="inline-block bg-[#ec6907] text-white font-semibold px-8 py-3 hover:bg-[#d45e06] transition-colors text-sm"
+            className="bg-[#ec6907] text-white font-bold w-full max-w-[20rem] h-[3.375rem] flex items-center justify-center border-2 border-transparent uppercase tracking-wide hover:bg-white hover:text-[#ec6907] hover:border-[#ec6907] transition-all duration-[400ms] text-lg"
           >
             Більше статей
           </Link>

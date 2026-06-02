@@ -71,26 +71,28 @@ export default function ProductsSection() {
               {/* Info */}
               <div className="flex flex-col flex-1 p-4">
                 <div className="flex-1">
-                  <p className="text-base font-semibold text-gray-900 leading-snug mb-2">
+                  <p className="text-lg font-semibold text-gray-900 leading-snug mb-2">
                     {product.title}
                   </p>
-                  <p className="text-sm text-gray-500 font-medium mb-4 line-clamp-2">
+                  <p className="text-sm text-gray-500 font-medium mb-8 line-clamp-2">
                     {product.description}
                   </p>
                 </div>
-                {/* Price — two sibling spans like in original .catalog-price */}
-                <div className="flex items-baseline gap-1 mt-auto">
-                  <span className="text-lg font-bold text-gray-900">{product.price}</span>
-                  <span className="text-base font-bold text-gray-900">грн</span>
+                <div
+                  className="flex items-baseline gap-1 mt-auto justify-end"
+                  style={{ fontFamily: "var(--font-fira-sans), sans-serif" }}
+                >
+                  <span className="text-[2rem] font-bold text-[#ec6907] leading-[2.375rem]">{product.price}</span>
+                  <span className="text-[2rem] font-bold text-[#ec6907] leading-[2.375rem]">грн</span>
                 </div>
               </div>
             </Link>
           ))}
         </div>
-        <div className="mt-10">
+        <div className="mt-10 flex justify-center">
           <Link
             href="/shop"
-            className="inline-block bg-[#ec6907] text-white font-semibold px-8 py-3 hover:bg-[#d45e06] transition-colors text-sm"
+            className="bg-[#ec6907] text-white font-bold w-full max-w-[20rem] h-[3.375rem] flex items-center justify-center border-2 border-transparent uppercase tracking-wide hover:bg-white hover:text-[#ec6907] hover:border-[#ec6907] transition-all duration-[400ms] text-lg"
           >
             Більше товарів
           </Link>

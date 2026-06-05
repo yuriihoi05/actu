@@ -81,11 +81,11 @@ export default function Header() {
               </div>
               {catalogOpen && (
                 <div className="absolute top-full left-0 bg-white shadow-lg py-2 min-w-[260px] z-50">
-                  <Link href="/product-category/klejovi-sumishi" className="block px-4 py-2 text-sm text-gray-700 hover:text-[#ec6907] hover:bg-gray-50">Клейові суміші</Link>
-                  <Link href="/product-category/sumish-vlashtuvannya-pidlog" className="block px-4 py-2 text-sm text-gray-700 hover:text-[#ec6907] hover:bg-gray-50">Суміш влаштування підлог</Link>
-                  <Link href="/product-category/sumish-dlya-system-teploizolyacziyi" className="block px-4 py-2 text-sm text-gray-700 hover:text-[#ec6907] hover:bg-gray-50">Суміш для систем теплоізоляції</Link>
-                  <Link href="/product-category/sumishi-dlya-shtukaturnyh-robit" className="block px-4 py-2 text-sm text-gray-700 hover:text-[#ec6907] hover:bg-gray-50">Суміші для штукатурних робіт</Link>
-                  <Link href="/product-category/gruntovka" className="block px-4 py-2 text-sm text-gray-700 hover:text-[#ec6907] hover:bg-gray-50">Ґрунтовка</Link>
+                  <Link href="/shop/klejovi-sumishi" className="block px-4 py-2 text-sm text-gray-700 hover:text-[#ec6907] hover:bg-gray-50">Клейові суміші</Link>
+                  <Link href="/shop/sumish-vlashtuvannya-pidlog" className="block px-4 py-2 text-sm text-gray-700 hover:text-[#ec6907] hover:bg-gray-50">Суміш влаштування підлог</Link>
+                  <Link href="/shop/sumish-dlya-system-teploizolyacziyi" className="block px-4 py-2 text-sm text-gray-700 hover:text-[#ec6907] hover:bg-gray-50">Суміш для систем теплоізоляції</Link>
+                  <Link href="/shop/sumishi-dlya-shtukaturnyh-robit" className="block px-4 py-2 text-sm text-gray-700 hover:text-[#ec6907] hover:bg-gray-50">Суміші для штукатурних робіт</Link>
+                  <Link href="/shop/gruntovka" className="block px-4 py-2 text-sm text-gray-700 hover:text-[#ec6907] hover:bg-gray-50">Ґрунтовка</Link>
                 </div>
               )}
             </div>
@@ -153,11 +153,11 @@ export default function Header() {
                 </svg>
               </button>
               <div className={`overflow-hidden transition-all duration-300 ${mobileCatalogOpen ? "max-h-60" : "max-h-0"}`}>
-                <Link href="/product-category/klejovi-sumishi" className="block px-8 py-2 text-sm text-gray-500 hover:text-[#ec6907] hover:bg-gray-50" onClick={() => setMobileOpen(false)}>Клейові суміші</Link>
-                <Link href="/product-category/sumish-vlashtuvannya-pidlog" className="block px-8 py-2 text-sm text-gray-500 hover:text-[#ec6907] hover:bg-gray-50" onClick={() => setMobileOpen(false)}>Суміш влаштування підлог</Link>
-                <Link href="/product-category/sumish-dlya-system-teploizolyacziyi" className="block px-8 py-2 text-sm text-gray-500 hover:text-[#ec6907] hover:bg-gray-50" onClick={() => setMobileOpen(false)}>Суміш для систем теплоізоляції</Link>
-                <Link href="/product-category/sumishi-dlya-shtukaturnyh-robit" className="block px-8 py-2 text-sm text-gray-500 hover:text-[#ec6907] hover:bg-gray-50" onClick={() => setMobileOpen(false)}>Суміші для штукатурних робіт</Link>
-                <Link href="/product-category/gruntovka" className="block px-8 py-2 text-sm text-gray-500 hover:text-[#ec6907] hover:bg-gray-50" onClick={() => setMobileOpen(false)}>Ґрунтовка</Link>
+                <Link href="/shop/klejovi-sumishi" className="block px-8 py-2 text-sm text-gray-500 hover:text-[#ec6907] hover:bg-gray-50" onClick={() => setMobileOpen(false)}>Клейові суміші</Link>
+                <Link href="/shop/sumish-vlashtuvannya-pidlog" className="block px-8 py-2 text-sm text-gray-500 hover:text-[#ec6907] hover:bg-gray-50" onClick={() => setMobileOpen(false)}>Суміш влаштування підлог</Link>
+                <Link href="/shop/sumish-dlya-system-teploizolyacziyi" className="block px-8 py-2 text-sm text-gray-500 hover:text-[#ec6907] hover:bg-gray-50" onClick={() => setMobileOpen(false)}>Суміш для систем теплоізоляції</Link>
+                <Link href="/shop/sumishi-dlya-shtukaturnyh-robit" className="block px-8 py-2 text-sm text-gray-500 hover:text-[#ec6907] hover:bg-gray-50" onClick={() => setMobileOpen(false)}>Суміші для штукатурних робіт</Link>
+                <Link href="/shop/gruntovka" className="block px-8 py-2 text-sm text-gray-500 hover:text-[#ec6907] hover:bg-gray-50" onClick={() => setMobileOpen(false)}>Ґрунтовка</Link>
               </div>
             </div>
 
